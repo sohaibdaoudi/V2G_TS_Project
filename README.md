@@ -97,7 +97,7 @@ The Streamlit application serves as the user interface for the optimization syst
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/sohaibdaoudi/V2G_TS_Project.git](https://github.com/sohaibdaoudi/V2G_TS_Project.git)
+    git clone https://github.com/sohaibdaoudi/V2G_TS_Project.git
     cd V2G_TS_Project
     ```
 2.  **Set up a Python virtual environment (recommended):**
