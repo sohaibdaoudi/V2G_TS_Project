@@ -127,7 +127,7 @@ The Streamlit application serves as the user interface for the optimization syst
 
 ## 🙏 Acknowledgements
 
-* This project adapts and builds upon the concepts demonstrated in the "24-hour Simulation of a Vehicle-to-Grid (V2G) System" example provided by MathWorks for MATLAB & Simulink. We thank MathWorks for making such examples available to the community. You can find the original simulation concept here: [**INSERT LINK TO THE ORIGINAL MATLAB SIMULATION HERE - e.g., MathWorks File Exchange or example page**]
+* This project adapts and builds upon the concepts demonstrated in the "24-hour Simulation of a Vehicle-to-Grid (V2G) System" example provided by MathWorks for MATLAB & Simulink. We thank MathWorks for making such examples available to the community. You can find the original simulation concept [here](https://www.mathworks.com/help/sps/ug/24-hour-simulation-of-a-vehicle-to-grid-v2g-system.html)
 
 ## 🔮 Future Work
 
@@ -158,8 +158,6 @@ This project is licensed under the [Your Chosen License - e.g., MIT License]. Se
 
 * **SOHAIB DAOUDI:** [soh.daoudi@gmail.com](mailto:soh.daoudi@gmail.com)
 * **MAROUANE MAJIDI:** [majidi.marouane0@gmail.com](mailto:majidi.marouane0@gmail.com)
-
-Project Link: [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME)
 
 ---
 
