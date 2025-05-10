@@ -160,5 +160,3 @@ This project is licensed under the [Your Chosen License - e.g., MIT License]. Se
 * **MAROUANE MAJIDI:** [majidi.marouane0@gmail.com](mailto:majidi.marouane0@gmail.com)
 
 ---
-
-*This README was generated with assistance from an AI model, based on project information provided by the user.*
