@@ -61,8 +61,13 @@ Our project leverages V2G to optimize energy costs by deciding when it's more ec
     * Generated residential load data reflecting Moroccan consumption.
 
 ## 📂 Repository Structure
+```
+.├── Notebooks/                  
+├── Best Models/                
+├── Datasets/                   
+├── README.md
+```
 
-.├── Notebooks/                  # Jupyter notebooks for data analysis, exploration, model development├── Best Models/                # (Recommended) Storing trained machine learning models or optimization parameters├── Datasets/                   # Storing input data (irradiation, load profiles, simulation outputs)├── README.md                   # This file└── ...                         # Other project files (e.g., requirements.txt, Streamlit app scripts)
 ## ⚙️ Simulation Details
 
 The core simulation, based on a MATLAB & Simulink model (see Acknowledgements), is adapted for this project. Key modifications include:
