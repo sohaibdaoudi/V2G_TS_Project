@@ -1,4 +1,4 @@
-# Optimizing Electricity Production Costs with Vehicle-to-Grid (V2G) Technology
+# Optimizing Electricity Production Costs with Vehicle-to-Grid (V2G) Technology (Time Series Project)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Python Version](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/downloads/)
 [![Streamlit Version](https://img.shields.io/badge/streamlit-1.20%2B-ff69b4.svg)](https://streamlit.io/)
@@ -97,8 +97,8 @@ The Streamlit application serves as the user interface for the optimization syst
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
-    cd YOUR_REPOSITORY_NAME
+    git clone [https://github.com/sohaibdaoudi/V2G_TS_Project.git](https://github.com/sohaibdaoudi/V2G_TS_Project.git)
+    cd V2G_TS_Project
     ```
 2.  **Set up a Python virtual environment (recommended):**
     ```bash
