@@ -132,11 +132,6 @@ Please ensure your code adheres to standard coding practices and includes releva
 This project is licensed under the [Your Chosen License - e.g., MIT License]. See the `LICENSE` file for more details.
 *(**Note:** You'll need to add a `LICENSE` file to your repository. If you chose MIT, you can easily find a template online.)*
 
-## 📧 Contact
-
-[Your Name / Organization Name] - [your.email@example.com]
-
-Project Link: [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME)
 
 ---
 
