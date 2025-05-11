@@ -1,6 +1,6 @@
 # Optimizing Electricity Production Costs with Vehicle-to-Grid (V2G) Technology (Time Series Project)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Python Version](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE.txt) [![Python Version](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/downloads/)
 [![Streamlit Version](https://img.shields.io/badge/streamlit-1.20%2B-ff69b4.svg)](https://streamlit.io/)
 [![MATLAB/Simulink](https://img.shields.io/badge/MATLAB%2FSimulink-R20XXx-orange.svg)](https://www.mathworks.com/products/matlab.html)
 
@@ -127,7 +127,7 @@ The Streamlit application serves as the user interface for the optimization syst
 
 ## 📊 Data
 
-* **Solar Irradiance:** Sourced from [Specify Source, e.g., a meteorological station, public database] for Meknès, Morocco. Stored in `Datasets/Irradiation/`.
+* **Solar Irradiance:** Sourced from MeteoSource.com for Meknès, Morocco. Stored in `Datasets/Irradiation/`.
 * **Residential Load:** Generated data designed to be representative of typical household electricity consumption in Morocco. The generation methodology can be found in `Notebooks/`. Stored in `Datasets/Load_Profiles/`.
 
 ## 🙏 Acknowledgements
@@ -152,12 +152,9 @@ Contributions are welcome! If you have suggestions for improvements or want to c
 4.  Push to the Branch (`git push origin feature/AmazingFeature`).
 5.  Open a Pull Request.
 
-Please ensure your code adheres to standard coding practices and includes relevant documentation.
-
 ## 📜 License
 
-This project is licensed under the [Your Chosen License - e.g., MIT License]. See the `LICENSE` file for more details.
-*(**Note:** You'll need to add a `LICENSE` file to your repository. If you chose MIT, you can easily find a template online.)*
+This project is licensed under the MIT License. See the `LICENSE.txt` file for more details.
 
 ## 📧 Contact
 
