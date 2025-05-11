@@ -62,7 +62,7 @@ Our project leverages V2G to optimize energy costs by deciding when it's more ec
 
 ## 📂 Repository Structure
 ```
-.├── Notebooks/                  
+├── Notebooks/                  
 ├── Best Models/                
 ├── Datasets/                   
 ├── README.md
