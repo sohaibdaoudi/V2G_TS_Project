@@ -66,7 +66,7 @@ Our project leverages V2G to optimize energy costs by deciding when it's more ec
 ├── Best Models/                
 ├── Datasets/                   
 ├── README.md
-├── LICENSE.txt
+└── LICENSE.txt
 ```
 
 ## ⚙️ Simulation Details
@@ -126,11 +126,6 @@ The Streamlit application serves as the user interface for the optimization syst
     ```
     *(Replace `app.py` with the actual name of your main Streamlit script if different)*
 
-## 📊 Data
-
-* **Solar Irradiance:** Sourced from MeteoSource.com for Meknès, Morocco. Stored in `Datasets/Irradiation/`.
-* **Residential Load:** Generated data designed to be representative of typical household electricity consumption in Morocco. The generation methodology can be found in `Notebooks/`. Stored in `Datasets/Load_Profiles/`.
-
 ## 🙏 Acknowledgements
 
 * This project adapts and builds upon the concepts demonstrated in the "24-hour Simulation of a Vehicle-to-Grid (V2G) System" example provided by MathWorks for MATLAB & Simulink. We thank MathWorks for making such examples available to the community. You can find the original simulation concept [here](https://www.mathworks.com/help/sps/ug/24-hour-simulation-of-a-vehicle-to-grid-v2g-system.html)
@@ -155,7 +150,7 @@ Contributions are welcome! If you have suggestions for improvements or want to c
 
 ## 📜 License
 
-This project is licensed under the MIT License. See the `LICENSE.txt` file for more details.
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). See the `LICENSE.txt` file for more details.
 
 ## 📧 Contact
 
