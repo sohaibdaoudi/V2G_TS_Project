@@ -1,160 +1,262 @@
-# Optimizing Electricity Production Costs with Vehicle-to-Grid (V2G) Technology (Time Series Project)
+# 🔋⚡ Intelligent Energy Management System with V2G Technology
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE.txt) [![Python Version](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE.txt) 
+[![Python Version](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/downloads/)
 [![Streamlit Version](https://img.shields.io/badge/streamlit-1.20%2B-ff69b4.svg)](https://streamlit.io/)
 [![MATLAB/Simulink](https://img.shields.io/badge/MATLAB%2FSimulink-R20XXx-orange.svg)](https://www.mathworks.com/products/matlab.html)
 
-**🚧 Project Status: Under Development 🚧**
+## 🚧 Project Status: Under Active Development 🚧
+### Attention:
+This application currently uses first-version models trained on limited data without standardization. An improved version will be released soon.
 
-## 📖 Overview
+## Notebooks Overview
 
-This project focuses on optimizing electricity production costs by intelligently integrating Vehicle-to-Grid (V2G) technology. We have adapted a foundational MATLAB & Simulink V2G simulation (see "Acknowledgements" section) to model longer timeframes (monthly) and incorporate real-world solar irradiance data from Meknès, Morocco, along with a generated residential load profile representative of Moroccan consumption patterns.
+Our project includes several Jupyter notebooks that demonstrate various aspects of our data analysis and modeling approach:
 
-The core output is a Streamlit-based web application designed to provide weekly forecasts. This application assists users in making informed decisions about whether to utilize stored energy from Electric Vehicles (EVs) via V2G or to supplement power generation with diesel, based on a comprehensive optimization study.
+| Notebook | Description |
+|----------|-------------|
+| **Final_Project_Simulation.ipynb** | Main project simulation and integration of all components |
+| **Load-DeepLearning.ipynb** | Development of RNN models for load forecasting |
+| **Load-StatisticalStudy.ipynb** | Statistical analysis of load patterns and trends |
+| **SolarEnergy-DeepLearning.ipynb** | BiLSTM models for solar energy production forecasting |
+| **SolarEnergy-StatisticalStudy.ipynb** | Statistical analysis of solar generation data |
+| **Cars_Energy_dispo-DeepLearning.ipynb** | RNN models for V2G energy availability prediction |
 
-##  V2G Explained
+## 📋 Quick Links
+- [Overview](#overview)
+- [V2G Technology Explained](#v2g-explained)
+- [Key Features](#key-features)
+- [Notebooks Overview](#notebooks-overview)
+- [Streamlit App Components](#streamlit-app-components)
+- [Technology Stack](#technology-stack)
+- [Simulation Details](#simulation-details)
+- [Repository Structure](#repository-structure)
+- [Installation & Usage](#running-the-application)
+- [Acknowledgements](#acknowledgements)
+- [License](#license)
+- [Contact](#contact)
 
-**What is Vehicle-to-Grid (V2G)?**
+## Overview
 
-Vehicle-to-Grid (V2G) is a technology that enables bi-directional energy flow between an electric vehicle's (EV) battery and the power grid. In simpler terms, it allows EVs not only to draw electricity from the grid to charge their batteries but also to send electricity back to the grid when needed.
+This project presents an intelligent energy management system that leverages Vehicle-to-Grid (V2G) technology to optimize electricity production costs. Using deep learning methods, we forecast key energy components and provide decision support for when to utilize stored energy from Electric Vehicles (EVs) versus supplementing with diesel generation.
 
-**How does it work?**
+The system integrates real-world solar irradiance data from Meknès, Morocco, along with residential load profiles representative of Moroccan consumption patterns. Our Streamlit application delivers weekly forecasts and cost-optimization recommendations based on comprehensive time series analysis.
 
-When an EV is plugged into a V2G-enabled charging station, specialized hardware and software manage the flow of electricity.
-1.  **Charging:** The EV charges its battery as usual.
-2.  **Discharging (V2G Mode):** When the grid requires extra power (e.g., during peak demand hours or when renewable energy generation is low), or when it's economically beneficial, the V2G system can draw stored energy from the EV's battery and feed it back into the grid.
-This process is controlled by an aggregator or a utility company, often with the EV owner's consent and potentially with financial incentives for participation.
+## V2G Explained
 
-**When is V2G used?**
+### What is Vehicle-to-Grid (V2G)?
 
-V2G can be particularly useful in several scenarios:
-* **Peak Shaving:** Discharging EV batteries during peak demand periods to reduce strain on the grid and potentially lower electricity costs for utilities (and consumers).
-* **Grid Stabilization:** Providing ancillary services like frequency regulation and voltage support to maintain grid stability.
-* **Renewable Energy Integration:** Storing excess renewable energy (e.g., solar power during the day) and discharging it when renewables are not generating (e.g., at night).
-* **Emergency Backup Power:** In some configurations, V2G-enabled vehicles could provide backup power during outages.
-* **Cost Optimization:** EV owners or fleet managers can potentially earn revenue by selling energy back to the grid or reduce their overall energy costs.
+Vehicle-to-Grid (V2G) is a cutting-edge technology enabling bidirectional energy flow between electric vehicle batteries and the power grid. Unlike conventional EV charging, V2G allows vehicles to not only consume electricity but also return it to the grid when beneficial.
 
-Our project leverages V2G to optimize energy costs by deciding when it's more economical to use stored EV energy versus other sources like diesel generators.
+![Image](https://github.com/user-attachments/assets/f0aac5e9-e10b-41d8-8296-e3e35398dc79)
 
-## ✨ Key Features
+## Streamlit App Components
 
-* **Extended V2G Simulation:** Modified MATLAB/Simulink model for monthly energy analysis, moving beyond the original 24-hour scope.
-* **Real-World Data Integration:** Utilizes actual solar irradiation data for Meknès, Morocco, enhancing simulation accuracy.
-* **Localized Load Profiling:** Incorporates a generated residential load profile that mirrors typical Moroccan electricity consumption.
-* **Optimization-Driven Decisions:** Employs an optimization study to determine the most cost-effective energy management strategies.
-* **Interactive Forecasting Tool:** A Streamlit web application provides users with:
-    * Weekly energy forecasts.
-    * Recommendations on using V2G energy versus purchasing diesel for overload scenarios.
-* **Data-Driven Insights:** Generates and analyzes data on load, solar energy production, and available V2G power.
+Our interactive web application provides a user-friendly interface for energy management decision support:
 
-## 🛠️ Technology Stack
+### Key App Modules
 
-* **Simulation:**
-    * MATLAB
-    * Simulink
-* **Data Processing & Optimization:**
-    * Python 3
-* **Web Application:**
-    * Streamlit
-* **Data Sources:**
-    * Real solar irradiation data for Meknès, Morocco.
-    * Generated residential load data reflecting Moroccan consumption.
+- **data_utils.py**: Functions for loading and preprocessing time series data
+- **model_utils.py**: Handles model loading and prediction generation
+- **optimization.py**: Implements cost optimization algorithms
+- **visualization.py**: Creates interactive charts and data visualizations
+- **utils.py**: General utility functions used throughout the application
 
-## 📂 Repository Structure
+### App Features
+
+- Weekly forecasts for load, solar production, and V2G availability
+- Cost comparison between V2G utilization and diesel generation
+- Interactive visualizations of energy patterns
+- Optimization recommendations for energy sourcing
+
+When connected to a V2G-enabled charging station, the system manages electricity flow through:
+
+1. **Charging Mode:** The EV draws power from the grid to charge its battery
+2. **Discharging (V2G) Mode:** The EV feeds stored energy back to the grid when:
+   - Grid demand peaks 
+   - Energy prices are high
+   - Renewable energy generation is low
+
+This process is coordinated through sophisticated control systems with EV owner consent, typically including financial incentives for participation.
+
+### V2G Use Cases
+
+V2G technology offers multiple benefits across the energy ecosystem:
+
+| Use Case | Description |
+|----------|-------------|
+| **Peak Shaving** | Reduces grid strain during high-demand periods by supplying stored EV energy |
+| **Grid Stabilization** | Provides ancillary services like frequency regulation and voltage support |
+| **Renewable Integration** | Stores surplus renewable energy for use when generation is insufficient |
+| **Emergency Backup** | Offers potential backup power during outages |
+| **Economic Optimization** | Creates revenue opportunities for EV owners through energy arbitrage |
+
+Our project specifically focuses on cost optimization by determining when V2G utilization is more economical than alternative generation sources.
+
+## Key Features
+
+- **Advanced Time Series Forecasting:** Deep learning models (RNN, BiLSTM, GRU) for accurate prediction of energy components
+- **Localized Data Integration:**
+  - Actual solar irradiation data from Meknès, Morocco
+  - Realistic residential load profiles mirroring Moroccan consumption patterns
+- **Cost Optimization Engine:** Algorithms to determine optimal energy sourcing strategies
+- **Interactive Decision Support:** Streamlit application providing:
+  - Weekly energy forecasts
+  - Cost-comparison between V2G and diesel generation
+  - Actionable recommendations for energy management
+- **Comprehensive Analytics:** Data visualization and insights on load patterns, solar production, and V2G availability
+
+## Technology Stack
+
+### Deep Learning Models
+- TensorFlow/Keras
+- Recurrent Neural Networks (RNN)
+- Bidirectional LSTM (BiLSTM)
+- Gated Recurrent Units (GRU)
+
+### Data Processing & Analysis
+- Python 3.x
+- Pandas
+- NumPy
+- Scikit-learn
+
+### Web Application
+- Streamlit
+
+### Data Sources
+- Solar irradiation measurements from Meknès, Morocco
+- Synthetic residential load profiles based on Moroccan consumption patterns
+
+## Repository Structure
+
 ```
-├── Notebooks/                  
-├── Best Models/                
-├── Datasets/                   
-├── README.md
-└── LICENSE.txt
+Intelligent-Energy-Management-System-with-V2G-Technology/
+├── Notebooks/                  # Jupyter notebooks for data analysis
+│   ├── Cars_Energy_dispo-DeepLearning.ipynb    # V2G energy availability modeling
+│   ├── Final_Project_Simulation.ipynb          # Complete project simulation
+│   ├── Load-DeepLearning.ipynb                 # Load forecasting with deep learning
+│   ├── Load-StatisticalStudy.ipynb             # Statistical analysis of load data
+│   ├── SolarEnergy-DeepLearning.ipynb          # Solar energy prediction models
+│   └── SolarEnergy-StatisticalStudy.ipynb      # Statistical analysis of solar data
+│
+├── Best Models/                # Optimized predictive models
+│   ├── best_model_BILSTM_SolarEnergy.h5        # BiLSTM model for solar prediction
+│   ├── best_model_RNN_LOAD.h5                  # RNN model for load forecasting
+│   └── RNN_CarsEnergy_v2g.h5                   # RNN model for V2G availability
+│
+├── Datasets/                   # Raw and processed datasets
+│   ├── Solar_energy_cleaned.csv                # Processed solar energy data
+│   ├── Total_Load.csv                          # Load profile dataset
+│   └── total_power_EV_disponible.xlsx          # Available EV power data
+│
+├── App_version_one/            # Streamlit application
+│   ├── app.py                  # Main application entry point
+│   ├── data_utils.py           # Data processing utilities
+│   ├── model_utils.py          # Model loading and prediction functions
+│   ├── optimization.py         # Cost optimization algorithms
+│   ├── utils.py                # General utility functions
+│   ├── visualization.py        # Data visualization components
+│   ├── style.css               # Custom CSS styling
+│   ├── requirements.txt        # App-specific dependencies
+│   │
+│   ├── data/                   # Application data files
+│   │   ├── Solar_Energy.xlsx
+│   │   ├── Total_Load.xlsx
+│   │   └── total_power_EV_disponible.xlsx
+│   │
+│   └── models/                 # Deployed model files
+│       ├── best_model_GRU_solar.h5
+│       ├── best_model_name_V2G_EV_energy_dispo.h5
+│       └── Load_Best_model_15.h5
+│
+├── README.md                   # Project documentation
+└── LICENSE.txt                 # MIT License
 ```
 
-## ⚙️ Simulation Details
+## Simulation Details
 
-The core simulation, based on a MATLAB & Simulink model (see Acknowledgements), is adapted for this project. Key modifications include:
+Our project leverages deep learning techniques to model and forecast three critical components of the V2G ecosystem:
 
-* **Extended Time Horizon:** Simulation runs for monthly periods instead of 24 hours.
-* **Component Modification:** Removal of the wind farm component from the original model.
-* **Data Inputs:**
-    * Solar Irradiance: Specific data for Meknès.
-    * Residential Load: Custom-generated data reflecting Moroccan usage patterns.
-* **Key Outputs:**
-    * Total Residential Load
-    * Solar Energy Production
-    * Total Power Available from EV V2G
+### Key Components
+- **Load Forecasting:** Predicting residential electricity demand using RNN models
+- **Solar Energy Production:** Forecasting solar energy generation with BiLSTM/GRU models
+- **V2G Availability:** Modeling available power from electric vehicle fleets
 
-## 🚀 Streamlit Application
+### Data Inputs
+- **Solar Irradiance:** High-resolution measurements from Meknès region
+- **Residential Load:** Load profile data reflecting Moroccan consumption patterns
+- **EV Fleet Parameters:** Available power data from electric vehicles
 
-The Streamlit application serves as the user interface for the optimization system. Its primary functions are:
+### Forecasting Outputs
+- Total Residential Load (kW)
+- Solar Energy Production (kW)
+- Available V2G Power Capacity (kW)
+- Cost Optimization Metrics (MAD/kWh)
 
-1.  **Displaying Weekly Forecasts:** Visualizing anticipated energy supply and demand.
-2.  **Providing Recommendations:** Advising on whether to:
-    * Utilize energy stored in EVs (V2G).
-    * Purchase diesel fuel to cover potential energy deficits.
-    These recommendations are based on the outputs of the optimization study.
+## Running the Application
 
-### Prerequisites for Running the App
+### Prerequisites
+- Python 3.7+
+- Git
 
-* Python 3.x
-* Streamlit (version specified in badges, e.g., 1.20+)
-* Other Python packages (list them in a `requirements.txt` file)
+### Installation Steps
 
-### Running the Application
+1. **Clone the repository:**
+   ```bash
+   git clone --depth 1 --filter=blob:none --sparse https://github.com/MarouaneMajidi/Intelligent-Energy-Management-System-with-V2G-Technology.git
+   cd Intelligent-Energy-Management-System-with-V2G-Technology
+   git sparse-checkout init --cone
+   git sparse-checkout set App_version_one
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/sohaibdaoudi/V2G_TS_Project.git
-    cd V2G_TS_Project
-    ```
-2.  **Set up a Python virtual environment (recommended):**
-    ```bash
-    python3 -m venv venv  # Or `python -m venv venv`
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
-3.  **Install dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-    *(Ensure you have a `requirements.txt` file listing all necessary Python packages, including Streamlit)*
-4.  **Navigate to the application directory (if your app.py is in a subfolder, e.g., App/):**
-    ```bash
-    # cd App/ # Uncomment if your app is in a subfolder
-    ```
-5.  **Run the Streamlit app:**
-    ```bash
-    streamlit run app.py
-    ```
-    *(Replace `app.py` with the actual name of your main Streamlit script if different)*
+   ```
 
-## 🙏 Acknowledgements
+2. **Set up a Python virtual environment:**
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 
-* This project adapts and builds upon the concepts demonstrated in the "24-hour Simulation of a Vehicle-to-Grid (V2G) System" example provided by MathWorks for MATLAB & Simulink. We thank MathWorks for making such examples available to the community. You can find the original simulation concept [here](https://www.mathworks.com/help/sps/ug/24-hour-simulation-of-a-vehicle-to-grid-v2g-system.html)
+3. **Install Streamlit app dependencies:**
+   ```bash
+   cd App_version_one
+   pip install -r requirements.txt
+   ```
 
-## 🔮 Future Work
+4. **Launch the Streamlit application:**
+   ```bash
+   streamlit run app.py
+   ```
 
-* [ ] Integrate real-time data feeds for load and solar production.
-* [ ] Expand the optimization model to include more variables (e.g., battery degradation costs, dynamic electricity pricing).
-* [ ] Develop more sophisticated forecasting models and store them in `Best Models/`.
-* [ ] Enhance the user interface with more detailed analytics and visualizations.
-* [ ] Conduct a comparative analysis with other energy storage solutions.
+5. **Access the application:**
+   Open your browser and navigate to `http://localhost:8501`
 
-## 🤝 Contributing
+## Acknowledgements
 
-Contributions are welcome! If you have suggestions for improvements or want to contribute to the project, please follow these steps:
+This project draws inspiration from the "24-hour Simulation of a Vehicle-to-Grid (V2G) System" example provided by MathWorks. We extend our gratitude to MathWorks for providing this valuable conceptual foundation. The original simulation concept can be found [here](https://www.mathworks.com/help/sps/ug/24-hour-simulation-of-a-vehicle-to-grid-v2g-system.html).
 
-1.  Fork the Project.
-2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`).
-3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`).
-4.  Push to the Branch (`git push origin feature/AmazingFeature`).
-5.  Open a Pull Request.
+We also acknowledge the following resources that contributed to this project:
+- TensorFlow/Keras documentation for deep learning implementation
+- Streamlit documentation for web application development
+- Various academic papers on V2G optimization techniques
 
-## 📜 License
+## License
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). See the `LICENSE.txt` file for more details.
+This project is licensed under the [MIT License](./LICENSE.txt) - see the LICENSE.txt file for details.
 
-## 📧 Contact
+## Contact
 
-* **SOHAIB DAOUDI:** [soh.daoudi@gmail.com](mailto:soh.daoudi@gmail.com)
-* **MAROUANE MAJIDI:** [majidi.marouane0@gmail.com](mailto:majidi.marouane0@gmail.com)
+### Project Maintainers
+
+- **Sohaib Daoudi**
+  - Email: [soh.daoudi@gmail.com](mailto:soh.daoudi@gmail.com)
+  - GitHub: [@sohaibdaoudi](https://github.com/sohaibdaoudi)
+
+- **Marouane Majidi**
+  - Email: [majidi.marouane0@gmail.com](mailto:majidi.marouane0@gmail.com)
+  - GitHub: [@marouanemajidi](https://github.com/marouanemajidi)
 
 ---
+
+<p align="center">
+  <em>Powering the future, one vehicle at a time.</em>
+</p>
