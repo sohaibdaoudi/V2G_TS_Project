@@ -1,0 +1,135 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #1E3A8A;
+}
+
+/* Header styles */
+.header {
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    background: linear-gradient(to right, #1E3A8A, #3B82F6);
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-weight: 700;
+    margin: 0;
+    color: white;
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    opacity: 0.9;
+    margin-top: 5px;
+    font-size: 1.1rem;
+    color: white;
+}
+
+/* Sidebar */
+.sidebar-content {
+    background-color: #f8fafc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Metric cards */
+div[data-testid="stMetricValue"] {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+}
+
+div[data-testid="stMetricDelta"] {
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+}
+
+/* Container styling */
+div.stButton > button {
+    background-color: #3B82F6;
+    color: white;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+div.stButton > button:hover {
+    background-color: #2563EB;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+}
+
+div.stButton > button:active {
+    transform: translateY(1px);
+}
+
+/* Chart styling */
+div.js-plotly-plot {
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    background-color: white;
+    padding: 10px;
+}
+
+/* Tabs styling */
+button[data-baseweb="tab"] {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Download button */
+div.stDownloadButton > button {
+    background-color: #059669;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.2s ease;
+}
+
+div.stDownloadButton > button:hover {
+    background-color: #047857;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Info box */
+div.stAlert {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.st-emotion-cache-13ejsyy h2 {
+    animation: fadeIn 0.5s ease-in;
+}
+
+.st-emotion-cache-ocqkz7 {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Datatable styling */
+div[data-testid="stDataFrame"] {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    background-color: white;
+}
