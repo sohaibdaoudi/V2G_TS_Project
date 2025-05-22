@@ -210,24 +210,32 @@ Our project leverages deep learning techniques to model and forecast three criti
 
    ```
 
-2. **Set up a Python virtual environment:**
+2. **Set up a virtual environment:**
+   - Using venv (pip users):
+   
    ```bash
    python3 -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
-3. **Install Streamlit app dependencies:**
+   - Using conda:
+   ```bash
+   conda create -n v2g_env python=3.XX # Choose what version of python you want or remove =3.XX to install the latest version of python
+   conda activate v2g_env
+   ```
+
+4. **Install Streamlit app dependencies:**
    ```bash
    cd App_version_one
    pip install -r requirements.txt
    ```
 
-4. **Launch the Streamlit application:**
+5. **Launch the Streamlit application:**
    ```bash
    streamlit run app.py
    ```
 
-5. **Access the application:**
+6. **Access the application:**
    Open your browser and navigate to `http://localhost:8501`
 
 ## Acknowledgements
