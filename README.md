@@ -22,7 +22,7 @@ Our project includes several Jupyter notebooks that demonstrate various aspects 
 | **SolarEnergy-StatisticalStudy.ipynb** | Statistical analysis of solar generation data |
 | **Cars_Energy_dispo-DeepLearning.ipynb** | RNN models for V2G energy availability prediction |
 
-## 📋 Quick Links
+## Quick Links
 - [Overview](#overview)
 - [V2G Technology Explained](#v2g-explained)
 - [Key Features](#key-features)
@@ -266,5 +266,5 @@ This project is licensed under the [MIT License](./LICENSE.txt) - see the LICENS
 ---
 
 <p align="center">
-  <em>Powering the future, one vehicle at a time.</em>
+  <em>Innovation is seeing what everybody has seen and thinking what nobody has thought.</em>
 </p>
