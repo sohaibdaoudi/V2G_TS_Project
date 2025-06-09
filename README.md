@@ -1,11 +1,11 @@
-# 🔋⚡ Intelligent Energy Management System with V2G Technology
+# Intelligent Energy Management System with V2G Technology
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE.txt) 
 [![Python Version](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/downloads/)
 [![Streamlit Version](https://img.shields.io/badge/streamlit-1.20%2B-ff69b4.svg)](https://streamlit.io/)
 [![MATLAB/Simulink](https://img.shields.io/badge/MATLAB%2FSimulink-R20XXx-orange.svg)](https://www.mathworks.com/products/matlab.html)
 
-## 🚧 Project Status: Under Active Development 🚧
+## Documentation is hosted [here](https://rtd-project-ts.readthedocs.io/en/latest/)
 ### Attention:
 This application currently uses first-version models trained on limited data without standardization. An improved version will be released soon.
 
