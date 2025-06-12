@@ -5,7 +5,7 @@
 [![Streamlit Version](https://img.shields.io/badge/streamlit-1.20%2B-ff69b4.svg)](https://streamlit.io/)
 [![MATLAB/Simulink](https://img.shields.io/badge/MATLAB%2FSimulink-R20XXx-orange.svg)](https://www.mathworks.com/products/matlab.html)
 
-## Documentation is hosted [here](https://rtd-project-ts.readthedocs.io/en/latest/)
+**Documentation:** The full project documentation is hosted [here](https://rtd-project-ts.readthedocs.io/en/latest/).
 ### Attention:
 This application currently uses first-version models trained on limited data without standardization. An improved version will be released soon.
 
