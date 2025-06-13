@@ -1,0 +1,12 @@
+streamlit==1.37.1
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.5.1
+tensorflow==2.19.0
+matplotlib==3.9.2
+cvxpy==1.6.5
+plotly==5.24.1
+clarabel==0.10.0
+ecos==2.0.14
+osqp==1.0.3
+scs==3.2.7.post2
