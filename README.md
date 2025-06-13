@@ -167,19 +167,19 @@ Our project leverages deep learning techniques to model and forecast three criti
    - Using venv (pip users):
    
    ```bash
-   python3 -m venv venv
+   python3.10 -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
    - Using conda:
    ```bash
-   conda create -n v2g_env python=3.XX # Choose what version of python you want or remove =3.XX to install the latest version of python
+   conda create -n v2g_env python=3.10
    conda activate v2g_env
    ```
 
 4. **Install Streamlit app dependencies:**
    ```bash
-   cd C:\PATH_TO_PROJECT\App_V2
+   cd C:\PATH_TO__V2G_TS_Project_FOLDER\App_V2
    pip install -r requirements.txt
    ```
 
@@ -189,7 +189,7 @@ Our project leverages deep learning techniques to model and forecast three criti
    ```
 
 6. **Access the application:**
-   Open your browser and navigate to `http://localhost:8501`
+   It will run automatically. If not, open your browser and navigate to `http://localhost:8501`
 
 ## Acknowledgements
 
