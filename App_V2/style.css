@@ -1,0 +1,191 @@
+/* Main styles */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #1E293B;
+}
+
+/* Header styling */
+.header {
+    background: linear-gradient(90deg, #1E88E5 0%, #0D47A1 100%);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    margin-top: 0.5rem;
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+/* Card styling */
+.stCard {
+    border-radius: 8px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07) !important;
+    padding: 1.5rem !important;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.stCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Button styling */
+.stButton > button {
+    font-weight: 600 !important;
+    border-radius: 8px !important;
+    padding: 0.5rem 1.5rem !important;
+    transition: all 0.2s ease;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Primary button styling */
+.stButton > button[kind="primary"] {
+    background-color: #1E88E5 !important;
+    border: none !important;
+}
+
+.stButton > button[kind="primary"]:hover {
+    background-color: #1976D2 !important;
+}
+
+/* Sidebar styling */
+.css-1vq4p4l, .css-163ttbj, .css-1vencpc {
+    border-right: 1px solid #EEF2F6 !important;
+}
+
+/* Tabs styling */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    height: 50px;
+    white-space: pre-wrap;
+    border-radius: 8px 8px 0 0 !important;
+    padding: 8px 16px;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: rgba(30, 136, 229, 0.1) !important;
+    font-weight: 600;
+}
+
+/* Metrics styling */
+.stMetric {
+    background-color: #0e1117;
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.stMetric:hover {
+    transform: translateY(-2px);
+}
+
+/* Plot styling */
+[data-testid="stPlotlyChart"] {
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Dataframe styling */
+.stDataFrame {
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Expander styling */
+.streamlit-expander {
+    border: 1px solid #EEF2F6 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+/* Slider styling */
+.stSlider {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Number input styling */
+.stNumberInput input {
+    border-radius: 8px !important;
+}
+
+/* Success message styling */
+.element-container .stAlert.success {
+    border-left-color: #4CAF50 !important;
+    background-color: rgba(76, 175, 80, 0.1) !important;
+    border-radius: 8px;
+}
+
+/* Info message styling */
+.element-container .stAlert.info {
+    border-left-color: #1E88E5 !important;
+    background-color: rgba(30, 136, 229, 0.1) !important;
+    border-radius: 8px;
+}
+
+/* Warning message styling */
+.element-container .stAlert.warning {
+    border-left-color: #FFC107 !important;
+    background-color: rgba(255, 193, 7, 0.1) !important;
+    border-radius: 8px;
+}
+
+/* Error message styling */
+.element-container .stAlert.error {
+    border-left-color: #F44336 !important;
+    background-color: rgba(244, 67, 54, 0.1) !important;
+    border-radius: 8px;
+}
+
+/* Progress bar styling */
+.stProgress > div > div {
+    background-color: #1E88E5 !important;
+}
+
+/* Upload button styling */
+.stFileUploader button {
+    background-color: white !important;
+    color: #1E88E5 !important;
+    border: 1px solid #1E88E5 !important;
+    font-weight: 600 !important;
+    border-radius: 8px !important;
+    transition: all 0.2s ease;
+}
+
+.stFileUploader button:hover {
+    background-color: rgba(30, 136, 229, 0.1) !important;
+    transform: translateY(-2px);
+}
+
+/* Animation for loading elements */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.stImage, .stMetric, .stPlotlyChart, .stDataFrame {
+    animation: fadeIn 0.5s ease-out;
+}
