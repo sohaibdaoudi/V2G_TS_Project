@@ -10,3 +10,5 @@ clarabel==0.10.0
 ecos==2.0.14
 osqp==1.0.3
 scs==3.2.7.post2
+openpyxl==3.1.5
+xlsxwriter==3.2.3
