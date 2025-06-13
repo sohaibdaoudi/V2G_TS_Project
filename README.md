@@ -127,54 +127,7 @@ Our project specifically focuses on cost optimization by determining when V2G ut
 - Solar irradiation measurements from Meknès, Morocco
 - Synthetic residential load profiles based on Moroccan consumption patterns
 
-## Repository Structure
-
-```
-Intelligent-Energy-Management-System-with-V2G-Technology/
-├── Notebooks/                  # Jupyter notebooks for data analysis
-│   ├── Cars_Energy_dispo-DeepLearning.ipynb    # V2G energy availability modeling
-│   ├── Final_Project_Simulation.ipynb          # Complete project simulation
-│   ├── Load-DeepLearning.ipynb                 # Load forecasting with deep learning
-│   ├── Load-StatisticalStudy.ipynb             # Statistical analysis of load data
-│   ├── SolarEnergy-DeepLearning.ipynb          # Solar energy prediction models
-│   └── SolarEnergy-StatisticalStudy.ipynb      # Statistical analysis of solar data
-│
-├── Best Models/                # Optimized predictive models
-│   ├── best_model_BILSTM_SolarEnergy.h5        # BiLSTM model for solar prediction
-│   ├── best_model_RNN_LOAD.h5                  # RNN model for load forecasting
-│   └── RNN_CarsEnergy_v2g.h5                   # RNN model for V2G availability
-│
-├── Datasets/                   # Raw and processed datasets
-│   ├── Solar_energy_cleaned.csv                # Processed solar energy data
-│   ├── Total_Load.csv                          # Load profile dataset
-│   └── total_power_EV_disponible.xlsx          # Available EV power data
-│
-├── App_version_one/            # Streamlit application
-│   ├── app.py                  # Main application entry point
-│   ├── data_utils.py           # Data processing utilities
-│   ├── model_utils.py          # Model loading and prediction functions
-│   ├── optimization.py         # Cost optimization algorithms
-│   ├── utils.py                # General utility functions
-│   ├── visualization.py        # Data visualization components
-│   ├── style.css               # Custom CSS styling
-│   ├── requirements.txt        # App-specific dependencies
-│   │
-│   ├── data/                   # Application data files
-│   │   ├── Solar_Energy.xlsx
-│   │   ├── Total_Load.xlsx
-│   │   └── total_power_EV_disponible.xlsx
-│   │
-│   └── models/                 # Deployed model files
-│       ├── best_model_GRU_solar.h5
-│       ├── best_model_name_V2G_EV_energy_dispo.h5
-│       └── Load_Best_model_15.h5
-│
-├── README.md                   # Project documentation
-└── LICENSE.txt                 # MIT License
-```
-
 ## Simulation Details
-
 Our project leverages deep learning techniques to model and forecast three critical components of the V2G ecosystem:
 
 ### Key Components
@@ -206,7 +159,7 @@ Our project leverages deep learning techniques to model and forecast three criti
    git clone --depth 1 --filter=blob:none --sparse https://github.com/sohaibdaoudi/V2G_TS_Project.git
    cd V2G_TS_Project
    git sparse-checkout init --cone
-   git sparse-checkout set App_version_one
+   git sparse-checkout set App_V2
 
    ```
 
@@ -226,7 +179,7 @@ Our project leverages deep learning techniques to model and forecast three criti
 
 4. **Install Streamlit app dependencies:**
    ```bash
-   cd App_version_one
+   cd App_V2
    pip install -r requirements.txt
    ```
 
