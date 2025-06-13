@@ -179,7 +179,7 @@ Our project leverages deep learning techniques to model and forecast three criti
 
 4. **Install Streamlit app dependencies:**
    ```bash
-   cd App_V2
+   cd C:\PATH_TO_PROJECT\App_V2
    pip install -r requirements.txt
    ```
 
