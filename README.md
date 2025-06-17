@@ -5,36 +5,8 @@
 [![Streamlit Version](https://img.shields.io/badge/streamlit-1.20%2B-ff69b4.svg)](https://streamlit.io/)
 [![MATLAB/Simulink](https://img.shields.io/badge/MATLAB%2FSimulink-R20XXx-orange.svg)](https://www.mathworks.com/products/matlab.html)
 
-## **Documentation:** The full project documentation is hosted [here](https://rtd-project-ts.readthedocs.io/en/latest/).
-### Attention:
-This application currently uses first-version models trained on limited data without standardization. An improved version will be released soon.
-
-## Notebooks Overview
-
-Our project includes several Jupyter notebooks that demonstrate various aspects of our data analysis and modeling approach:
-
-| Notebook | Description |
-|----------|-------------|
-| **Final_Project_Simulation.ipynb** | Main project simulation and integration of all components |
-| **Load-DeepLearning.ipynb** | Development of RNN models for load forecasting |
-| **Load-StatisticalStudy.ipynb** | Statistical analysis of load patterns and trends |
-| **SolarEnergy-DeepLearning.ipynb** | BiLSTM models for solar energy production forecasting |
-| **SolarEnergy-StatisticalStudy.ipynb** | Statistical analysis of solar generation data |
-| **Cars_Energy_dispo-DeepLearning.ipynb** | RNN models for V2G energy availability prediction |
-
-## Quick Links
-- [Overview](#overview)
-- [V2G Technology Explained](#v2g-explained)
-- [Key Features](#key-features)
-- [Notebooks Overview](#notebooks-overview)
-- [Streamlit App Components](#streamlit-app-components)
-- [Technology Stack](#technology-stack)
-- [Simulation Details](#simulation-details)
-- [Repository Structure](#repository-structure)
-- [Installation & Usage](#running-the-application)
-- [Acknowledgements](#acknowledgements)
-- [License](#license)
-- [Contact](#contact)
+## **Documentation:** 
+The full project documentation is hosted [here](https://rtd-project-ts.readthedocs.io/en/latest/).
 
 ## Overview
 
